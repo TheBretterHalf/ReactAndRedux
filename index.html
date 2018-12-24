@@ -21,16 +21,31 @@
                 name: 'Ryu',
                 age: 30
             }
+            handleClick(e){
+                //console.log(e.target)
+                //this is referencing different things within the component
+                console.log(this.state)
+            }
+            handleMouseOver(e){
+                console.log(e.target, e.pageX)
+            }
+            handleCopy(e){
+                console.log('Try Being Original For Once')
+            }
             //all class based components have to have at least one function--render
             //can only return one root element
             //cannot assign with class have to use className
             //doesnt get rid of the DIV above, it nests this component inside of it
-            //dynamic content needs to be put into braces
+            //dynamic content needs to be put into braces!!!
+            //if you use parenthesis (), you  automatically invoke the function when the page loads
             render(){
                 return(
                     <div className="app-content">
                         <h1> Hey, Ninjas</h1>
                         <p>My name is: {this.state.name} and I am {this.state.age}</p>
+                        <button onClick={this.handleClick} >Click Me</button>
+                        <button onMouseOver={this.handleMouseOver}>Hover me</button>
+                        <p onCopy={this.handleCopy}>What we think, we become</p>
                     </div>
                 )
             }
