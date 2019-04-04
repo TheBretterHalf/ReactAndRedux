@@ -17,15 +17,20 @@
         //blueprinting objects in javascript
         
         class App extends React.Component{
+            state = {
+                name: 'Ryu',
+                age: 30
+            }
             //all class based components have to have at least one function--render
             //can only return one root element
             //cannot assign with class have to use className
             //doesnt get rid of the DIV above, it nests this component inside of it
+            //dynamic content needs to be put into braces
             render(){
                 return(
                     <div className="app-content">
                         <h1> Hey, Ninjas</h1>
-                        <p>{Math.random()*10}</p>
+                        <p>My name is: {this.state.name} and I am {this.state.age}</p>
                     </div>
                 )
             }

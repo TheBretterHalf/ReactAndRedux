@@ -15,3 +15,9 @@ Version2-0
     
     Components can contain 'state' (data or UI state)
     they contain javascript for functionality.
+    
+Version5.0
+    Component States
+        -modal could close or data we output could change thus needing a constantly updating verions
+        -can update component states to output dynamically to webpages//UI states as well
+        -stored locally
