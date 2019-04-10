@@ -25,3 +25,7 @@ Version5.0
 Version6.0
     https://babeljs.io/setup
     https://reactjs.org/docs/cdn-links.html
+    
+Version11.0
+    index.html is rending request to server and response comes back/index
+    /contact keeps the component from reaching the server to save time
